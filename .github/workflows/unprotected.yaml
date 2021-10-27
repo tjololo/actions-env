@@ -1,10 +1,12 @@
 name: Protected
 
 on: pull_request
-
-steps:
-  - name: demo
-    env:
-      SECRET: ${{ secrets.SuperDuperSecret }}
-    run: |
-      echo "I can't have secrets: $SECRET"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: demo
+        env:
+          SECRET: ${{ secrets.SuperDuperSecret }}
+        run: |
+          echo "I can't have secrets: $SECRET"
