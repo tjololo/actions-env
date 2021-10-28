@@ -5,5 +5,5 @@ on: push
 jobs:
   call-reusable:
     uses: tjololo/reusable-workflows/.github/workflows/reuse-secret.yml@main
-    with:
+    secrets:
       secretin: testing
