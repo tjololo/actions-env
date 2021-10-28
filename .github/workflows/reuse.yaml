@@ -6,4 +6,4 @@ jobs:
   call-reusable:
     uses: tjololo/reusable-workflows/.github/workflows/reuse-secret.yml@main
     secrets:
-      secretin: testing
+      secretin: ${{ secrets.TEST }}
