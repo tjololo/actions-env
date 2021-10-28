@@ -1,0 +1,7 @@
+name: Run remote workflow
+
+on: push
+
+jobs:
+  call-reusable:
+    uses: tjololo/reusable-workflows/.github/workflows/reuse-secret.yml@main
